@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Peter Chappy</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #66BB6A;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.0/pixi.min.js"></script>
+
+        <script>
+            //Loads JSON
+            var request = new XMLHttpRequest();
+            var data;
+            var renderer, stage;
+
+            request.open('GET', 'data.json', true);
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    // Success!
+                    data = JSON.parse(request.responseText);
+                    setup();
+                }
+            };
+
+            request.send();
+
+            function setup() {
+                //Setups the renderer and  adds it to the DOM
+                renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight,
+                    {antialias: true, transparent: true, resolution: 1});
+                renderer.autoResize = true;
+                document.body.appendChild(renderer.view);
+
+                //creates a stage and adds it to the renderer
+                stage = new PIXI.Container();
+
+                var container = new PIXI.DisplayObjectContainer();
+
+                var graphics = new PIXI.Graphics();
+                graphics.beginFill(0xFFFFFF, 1);
+                graphics.drawRect(0, 0, window.innerWidth * .60, window.innerHeight * .60);
+                graphics.endFill();
+
+                container.addChild(graphics);
+                container.x = window.innerWidth / 2 - container.width / 2;
+                container.y = window.innerHeight / 2 - container.height / 2;
+
+                var text = new PIXI.Text(data.header_text, {font: "50px Arial", fill: "red"});
+                text.antialias = true;
+                container.addChild(text);
+
+                stage.addChild(container);
+                renderer.render(stage);
+
+                animate();
+            }
+
+            function animate() {
+                renderer.render(stage);
+                requestAnimationFrame( animate );
+            }
+        </script>
+    </body>
+</html>
