@@ -1,9 +1,10 @@
 import React from 'react';
 import NavOption from './navOption';
+import './navbar.css';
 
 const Navbar = (props) => {
     return(
-        <div style={styles}>
+        <div className="navBar">
             <NavOption
                 title={"Home"}
                 route={"/"}
@@ -22,14 +23,6 @@ const Navbar = (props) => {
                 />
         </div>
     );
-};
-
-const styles = {
-    display : "flex",
-    flex : 1,
-    height: 50,
-    backgroundColor: "#99B898",
-    boxShadow: "0 1px 1px 0 #2A363B"
 };
 
 export default Navbar;

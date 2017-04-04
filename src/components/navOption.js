@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./navOption.css";
+import "./navOption.css";
 
 const NavOption = ({title, route}) =>{
     return (
