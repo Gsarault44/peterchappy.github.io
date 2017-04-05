@@ -1,0 +1,8 @@
+.contentBlock{
+    height: 200px;
+    background-color: #d1c4e9;
+    box-shadow: 0 1px 1px 0 #BDBDBD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

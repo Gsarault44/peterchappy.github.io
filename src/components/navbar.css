@@ -1,9 +1,16 @@
 .navBar{
     height: 50px;
-    background-color: #99B898;
-    box-shadow: 0 1px 1px 0 #2A363B;
+    width: 100%;
+    background-color: #512da8;
+    box-shadow: 0 5px 5px 0 #BDBDBD;
+    position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end ;
+    justify-content: space-between;
+}
+
+.navSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -4,7 +4,9 @@ import "./navOption.css";
 const NavOption = ({title, route}) =>{
     return (
         <div className="navOptionContainer">
-            <a className="navOption" href={route}>{ title }</a>
+            <a href={route}>
+                <h2 className="navOption">{ title }</h2>
+            </a>
         </div>
     );
 }

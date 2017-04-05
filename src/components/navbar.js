@@ -5,22 +5,26 @@ import './navbar.css';
 const Navbar = (props) => {
     return(
         <div className="navBar">
-            <NavOption
-                title={"Home"}
-                route={"/"}
-                />
-            <NavOption
-                title={"Resume"}
-                route={"/resume"}
-                />
-            <NavOption
-                title={"Portfolio"}
-                route={"/portfolio"}
-                />
-            <NavOption
-                title={"Blog"}
-                route={"/blog"}
-                />
+            <div className="navSection">
+                <NavOption
+                    title={"Peter Chappy"}
+                    route={"/"}
+                    />
+            </div>
+            <div className="navSection">
+                <NavOption
+                    title={"Resume"}
+                    route={"/resume"}
+                    />
+                <NavOption
+                    title={"Portfolio"}
+                    route={"/portfolio"}
+                    />
+                <NavOption
+                    title={"Blog"}
+                    route={"/blog"}
+                    />
+            </div>
         </div>
     );
 };
