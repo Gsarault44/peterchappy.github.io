@@ -1,0 +1,36 @@
+.navItem{
+    z-index: 10;
+    display: flex;
+}
+
+.navItem a{
+    color: white;
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 1em;
+    height: auto;
+    display: inline-block;
+}
+
+@media (min-width:20em) { 
+    .navItem{
+        height: 100%;
+        padding-bottom: 14px;
+        justify-content: center;
+        align-items: center;    
+        text-align: center;
+    }
+}
+
+@media (min-width:60.063em) { 
+    .navItem{
+        height: auto;
+        width: 10vw;
+        vertical-align: middle;
+        padding-right: 14px;
+        padding-bottom: 0px;
+        justify-content: flex-end;
+        align-items: center; 
+        text-align: right;
+    }
+}
