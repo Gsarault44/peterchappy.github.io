@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import ContentBlock from './components/contentBlock'
-import Navbar from './components/navbar'
+import NavItem from './components/NavItem';
+import Side from './components/Side';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-          <Navbar/>
-          <div className="contentContainer">
-            <ContentBlock/>
-            <ContentBlock/>
-            <ContentBlock/>
-            <ContentBlock/>
-            <ContentBlock/>
-          </div>
+        <Side>
+          <NavItem title="Home"/>
+          <NavItem title="Projects"/>
+          <NavItem title="Work"/>
+          <NavItem title="Blog"/>
+          <NavItem title="Contact"/>
+        </Side>
       </div>
     );
-  }
-}
-
-export default App;
+  };
+};
