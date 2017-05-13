@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
+import Navigation from './components/Navigation'
 import './App.css';
 
-import NavItem from './components/NavItem';
-import Side from './components/Side';
+const navItems = ["About", "Work", "Portfolio", "Contact"];
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Side>
-          <NavItem title="Home"/>
-          <NavItem title="Projects"/>
-          <NavItem title="Work"/>
-          <NavItem title="Blog"/>
-          <NavItem title="Contact"/>
-        </Side>
+        <Navigation
+          navItems={navItems}
+          />
       </div>
     );
   };
