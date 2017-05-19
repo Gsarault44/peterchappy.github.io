@@ -1,0 +1,9 @@
+.contentBlock{
+    width: 100%;
+    height: 90vh;
+}
+.contentBlockFlexContainer{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}

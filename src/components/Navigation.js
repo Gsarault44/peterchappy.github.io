@@ -4,11 +4,13 @@ import NavigationItem from './NavigationItem';
 const styles = {
     navbar : {
         width: "100%",
+        height: "10vh",
         position: "absolute",
         display: "flex",
         flexDirection: "row",
         alignItems: "align-self",
         justifyContent: "space-around",
+        backgroundColor: "#1E1E1E",
         color: "#fff",
         margin: "20px 0"
     },
@@ -37,7 +39,11 @@ const styles = {
 }
 
 const renderNavItems = (navItems) => {
-    return navItems.map((navItem) => <NavigationItem key={navItem} title={navItem} />);
+    return navItems.map((navItem) => {
+        return(
+            <NavigationItem key={navItem} title={navItem} />
+        )
+    });
 }
 
 const Navigation = ({navItems}) => {

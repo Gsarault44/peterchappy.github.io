@@ -1,13 +1,20 @@
 import React from 'react';
 
 const style = {
-    margin: "0px 20px",
+
+    container : {
+        margin: "0px 20px",
+        cursor: "pointer",
+    },
+
 }
 
 const NavigationItem = ({title}) => {
     return(
-        <div style={style}>
-            <h3>{title}</h3>
+        <div>
+            <div style={style.container}>
+                <h3>{title}</h3>
+            </div>
         </div>
     );
 }
