@@ -14,6 +14,9 @@ export default class TypedText extends Component {
 
     componentWillUnmount(){
         clearInterval(this.timer);
+        if(this.props.renderOnce){
+            this.setState({shownText: this.state.textToShow});
+        }
     }
 
     type(){

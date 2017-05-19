@@ -2,6 +2,36 @@
     {
         "title" : "About",
         "type": "typed",
-        "body" : "Hi, I'm Peter Chapman I'm an Application Developer currently working with a bunch of talked people over at Bluecadet."
+        "body" : "Hi, I'm Peter Chapman, an Application Developer currently working with the talented people over at Bluecadet."
+    },
+    {
+        "title" : "Contact",
+        "icons" : [
+            {
+                "type" : "github",
+                "icon" : "test.png",
+                "link" : ""
+            },
+            {
+                "type" : "twitter",
+                "icon" : "test.png",
+                "link" : ""
+            },
+            {
+                "type" : "linkedin",
+                "icon" : "test.png",
+                "link" : ""
+            },
+            {
+                "type" : "instagram",
+                "icon" : "test.png",
+                "link" : ""
+            },
+            {
+                "type" : "email",
+                "icon" : "test.png",
+                "link" : ""
+            }
+        ]
     }
 ]
