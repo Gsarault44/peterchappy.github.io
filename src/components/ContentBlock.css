@@ -1,9 +1,11 @@
 .contentBlock{
     width: 100%;
     height: 90vh;
+    color: #fff;
 }
 .contentBlockFlexContainer{
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    overflow: auto;
+    align-items: center;
+    justify-content: center;
 }

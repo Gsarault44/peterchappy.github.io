@@ -12,7 +12,7 @@ const styles = {
         justifyContent: "space-around",
         backgroundColor: "#1E1E1E",
         color: "#fff",
-        margin: "20px 0"
+        padding: "20px 0"
     },
 
     navSectionLeft : {
