@@ -11,11 +11,11 @@ const style = {
 
 const NavigationItem = ({title}) => {
     return(
-        <div>
+        <li>
             <div style={style.container}>
                 <h3>{title}</h3>
             </div>
-        </div>
+        </li>
     );
 }
 

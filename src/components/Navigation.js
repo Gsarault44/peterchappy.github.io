@@ -4,7 +4,7 @@ import NavigationItem from './NavigationItem';
 const styles = {
     navbar : {
         width: "100%",
-        height: "10vh",
+        height: "10%",
         position: "absolute",
         display: "flex",
         flexDirection: "row",
@@ -30,6 +30,7 @@ const styles = {
         alignSelf: "flex-end",
         alignContent: "space-around",
         flexDirection: "row",
+        flexWrap: "wrap",
         color: "#fff",
     },
 
@@ -53,11 +54,11 @@ const Navigation = ({navItems}) => {
     return(
         <div style={navbar}>
             <div style={navSectionLeft}>
-                <h1 id={"header"} style={header}> C:\\ Peter Chapman</h1>
+                <h1 id={"header"} style={header}> C:\\ Chapman</h1>
             </div>
-            <div style={navSectionRight}>
+            <ul style={navSectionRight}>
                 {renderNavItems(navItems)}
-            </div>
+            </ul>
         </div>
     );
     

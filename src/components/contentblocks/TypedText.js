@@ -29,7 +29,9 @@ export default class TypedText extends Component {
 
     render(){
         return(
-            <h1 className="typedText">{this.state.shownText}</h1>
+            <div>
+                <h1 className="typedText">{this.state.shownText}</h1>
+            </div>
         );
     }
 }

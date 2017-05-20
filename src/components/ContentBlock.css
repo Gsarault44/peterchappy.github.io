@@ -9,3 +9,6 @@
     align-items: center;
     justify-content: center;
 }
+.contentBlockFlexContainer div{
+    margin-bottom: 10%;
+}
