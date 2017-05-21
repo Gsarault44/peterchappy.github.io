@@ -16,22 +16,22 @@
             {
                 "type" : "twitter",
                 "img" : "assets/twitter.png",
-                "link" : ""
+                "link" : "https://twitter.com/peter_chappy"
             },
             {
                 "type" : "linkedin",
                 "img" : "assets/linkedin.png",
-                "link" : ""
+                "link" : "https://www.linkedin.com/in/peterchappy/"
             },
             {
                 "type" : "instagram",
                 "img" : "assets/instagram.png",
-                "link" : ""
+                "link" : "https://www.instagram.com/peterchappy/"
             },
             {
                 "type" : "email",
                 "img" : "assets/email.png",
-                "link" : ""
+                "link" : "mailto:pnchappy92@gmail.com"
             }
         ]
     }
