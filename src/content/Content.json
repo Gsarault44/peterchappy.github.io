@@ -6,30 +6,31 @@
     },
     {
         "title" : "Contact",
+        "type" : "contact",
         "icons" : [
             {
                 "type" : "github",
-                "icon" : "test.png",
-                "link" : ""
+                "img" : "assets/github.png",
+                "link" : "http://github.com/peterchappy"
             },
             {
                 "type" : "twitter",
-                "icon" : "test.png",
+                "img" : "assets/twitter.png",
                 "link" : ""
             },
             {
                 "type" : "linkedin",
-                "icon" : "test.png",
+                "img" : "assets/linkedin.png",
                 "link" : ""
             },
             {
                 "type" : "instagram",
-                "icon" : "test.png",
+                "img" : "assets/instagram.png",
                 "link" : ""
             },
             {
                 "type" : "email",
-                "icon" : "test.png",
+                "img" : "assets/email.png",
                 "link" : ""
             }
         ]

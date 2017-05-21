@@ -4,6 +4,7 @@ import ContentBlock from './components/ContentBlock';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer.js';
 import TypedText from './components/contentblocks/TypedText';
+import ContactBlock from './components/contentblocks/ContactBlock';
 
 //Data
 import AppData from './content/Content.json';
@@ -26,7 +27,9 @@ export default class App extends Component {
           </ContentBlock>
           <ContentBlock>Test</ContentBlock>
           <ContentBlock>Test</ContentBlock>
-          <ContentBlock>Test</ContentBlock>
+          <ContentBlock>
+            <ContactBlock body={AppData[1]} />
+          </ContentBlock>
           <Footer/>
         </ContentHolder>
       </div>
