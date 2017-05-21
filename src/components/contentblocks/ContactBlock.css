@@ -4,12 +4,15 @@
     align-items: center;
 }
 
-.contactBlock h2{
+.contactBlock h1{
     margin-bottom: 25px;
 }
 
 .socialBlock{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }

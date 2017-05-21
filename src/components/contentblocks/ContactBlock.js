@@ -10,7 +10,7 @@ const ContactBlock = ({body}) => {
     const {title, icons} = body;
     return(
         <div className="contactBlock">
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <div className="socialBlock">{generateSocialIcons(icons)}</div>
         </div>
     );

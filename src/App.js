@@ -11,7 +11,7 @@ import AppData from './content/Content.json';
 
 import './App.css';
 
-const navItems = ["About", "Work", "Portfolio", "Contact"];
+const navItems = ["About", "Contact"];
 
 export default class App extends Component {
   render() {
@@ -25,8 +25,6 @@ export default class App extends Component {
             <TypedText 
               body={AppData[0].body} />
           </ContentBlock>
-          <ContentBlock>Test</ContentBlock>
-          <ContentBlock>Test</ContentBlock>
           <ContentBlock>
             <ContactBlock body={AppData[1]} />
           </ContentBlock>
