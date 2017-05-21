@@ -50,9 +50,81 @@ body {
 	font-family: 'Anonymous Pro', monospace;
 }
 
-h1 { font-size: 2.25em; }
+h1 { font-size: 2.0em; }
 h2 { font-size: 1.75em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .mobile{
+        display:flex;
+    }
+    .desktop{
+        display:none;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        display:flex;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .mobile{
+        display:flex;
+    }
+    .desktop{
+        display:none;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1025px) {
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        display:flex;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        display:flex;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .mobile{
+        display:flex;
+    }
+    .desktop{
+        display:none;
+    }
+}

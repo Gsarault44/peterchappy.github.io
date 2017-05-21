@@ -1,0 +1,51 @@
+.navbar{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: align-self;
+    justify-content: space-around;
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 20px 0
+}
+
+.navSectionLeft{
+    height: 100%;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: row;
+    color: #fff;
+}
+
+.navSectionRight {
+    height: 100%;
+    display: flex;
+    align-self: flex-end;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.header {
+
+}
+
+.borderMenu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.borderMenu:before {
+  content: "";
+  position: absolute;
+  top: 0.375em;
+  left: 0;
+  width: 1.5em;
+  height: 0.1875em;
+  border-top: 0.5625em double #FFF;
+  border-bottom: 0.1875em solid #FFF;
+}
