@@ -1,19 +1,19 @@
 .container{
-    width: auto;
-    margin: 0px 20px;
-    padding: 0px 20px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
+  width: auto;
+  margin: 0px 20px;
+  padding: 0px 20px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
 }
 
 .container a{
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .container a:hover:before{
-    content: ">";
-    display: block;
-    left: -20px;
-    top: 20px;
+  content: ">";
+  display: block;
+  left: -20px;
+  top: 20px;
 }

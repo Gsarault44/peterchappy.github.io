@@ -1,21 +1,21 @@
 .socialIcon{
-    width: 50px;
-    height: 50px;
-    margin: 15px;
-    cursor: pointer;
-    transition: transform 1s;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform 1s;
 }
 
 .socialIcon:hover, .socialIcon:active, .socialIcon:focus {
-    transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
 }
 
 .socialIcon a{
-    width: 100%;
-    width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .socialIcon a img{
-    width: 100%;
-    width: 100%;
+  width: 100%;
+  height: 100%;
 }

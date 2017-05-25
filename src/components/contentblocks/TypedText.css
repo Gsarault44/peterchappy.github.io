@@ -1,10 +1,10 @@
 .typedText{
-    width: 75vw;
+  width: 75vw;
 }
 
 .typedText::after{
-    content: "|";
-    animation: blink 1s step-start 0s infinite;
+  content: "|";
+  animation: blink 1s step-start 0s infinite;
 }
 
 @keyframes blink {

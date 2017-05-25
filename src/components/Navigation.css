@@ -1,34 +1,34 @@
 .navbar{
-    width: 100%;
-    height: 5%;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: align-self;
-    justify-content: space-around;
-    background-color: #1E1E1E;
-    color: #fff;
-    padding-top: 20px;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: align-self;
+  justify-content: space-around;
+  background-color: #1E1E1E;
+  color: #fff;
+  padding-top: 20px;
 }
 
 .navSectionLeft{
-    height: 100%;
-    display: flex;
-    align-self: flex-start;
-    justify-content: center;
-    align-content: space-around;
-    flex-direction: row;
-    color: #fff;
+  height: 100%;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: row;
+  color: #fff;
 }
 
 .navSectionRight {
-    height: 100%;
-    display: flex;
-    align-self: flex-end;
-    align-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: #fff;
+  height: 100%;
+  display: flex;
+  align-self: flex-end;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
 }
 
 .header {
