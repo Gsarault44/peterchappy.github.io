@@ -9,6 +9,6 @@
     align-items: center;
     justify-content: center;
 }
-.contentBlockFlexContainer div:first-child{
+.contentBlockFlexContainer:first-child{
     margin-bottom: 10%;
 }
