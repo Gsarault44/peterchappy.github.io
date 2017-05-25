@@ -6,7 +6,7 @@
     transition: transform 1s;
 }
 
-.socialIcon:hover{
+.socialIcon:hover, .socialIcon:active, .socialIcon:focus {
     transform: translate(0px, -5px);
 }
 
