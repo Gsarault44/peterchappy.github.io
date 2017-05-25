@@ -46,7 +46,7 @@ TypedText.defaultProps = {
 
 TypedText.propTypes = {
   renderOnce: PropTypes.bool,
-  text: PropTypes.oneOf(PropTypes.string).isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default TypedText;

@@ -16,7 +16,7 @@ function Navigation({ navItems }) {
         <h1 id={'header'} className="header">C:\\ Chapman</h1>
       </div>
       <ul className="navSectionRight desktop">
-          {renderNavItems(navItems)}
+        { renderNavItems(navItems) }
       </ul>
       <ul className="navSectionRight mobile">
         <div className="borderMenu" />
@@ -26,7 +26,7 @@ function Navigation({ navItems }) {
 }
 
 Navigation.propTypes = {
-  navItems: PropTypes.arrayOf(PropTypes.object).isRequired,
+  navItems: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Navigation;

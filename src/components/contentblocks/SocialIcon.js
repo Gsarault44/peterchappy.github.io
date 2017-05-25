@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './SocialIcon.css';
 
 function SocialIcon({ icon }) {
-
   const { link, img, type } = icon;
 
   return (
@@ -16,7 +15,11 @@ function SocialIcon({ icon }) {
 }
 
 SocialIcon.propTypes = {
-  icon: PropTypes.oneOf(PropTypes.object).isRequired,
+  icon: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default SocialIcon;

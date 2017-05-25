@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import TypedText from './components/contentblocks/TypedText';
 import ContactBlock from './components/contentblocks/ContactBlock';
 
-//Data
 import AppData from './content/Content.json';
 
 import './App.css';

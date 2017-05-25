@@ -18,7 +18,10 @@ function ContactBlock({ body }) {
 }
 
 ContactBlock.propTypes = {
-  body: PropTypes.isOneOf(PropTypes.object).isRequired,
+  body: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    icons: PropTypes.arrayOf(PropTypes.object),
+  }).isRequired,
 };
 
 export default ContactBlock;

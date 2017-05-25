@@ -15,7 +15,7 @@ function NavigationItem({ title }) {
 }
 
 NavigationItem.propTypes = {
-  title: PropTypes.oneOf(PropTypes.string).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default NavigationItem;
