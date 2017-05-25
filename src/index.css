@@ -128,3 +128,60 @@ only screen and (min-device-pixel-ratio : 1.5) {
       display:none;
     }
 }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+    .mobile {
+      display: flex;
+    }
+
+    .desktop {
+      display: none;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    .mobile {
+      display: flex;
+    }
+
+    .desktop {
+      display: none;
+    }
+}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .mobile {
+      display: flex;
+    }
+
+    .desktop {
+      display: none;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: flex;
+    }
+}
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: flex;
+    }
+}
