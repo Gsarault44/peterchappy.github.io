@@ -1,14 +1,17 @@
 import React from 'react';
-import './ContentBlock.css'
+import PropTypes from 'prop-types';
+import './ContentBlock.css';
 
-const ContentBlock = (props) => {
-    return (
-        <div className="contentBlock">
-            <div className="contentBlockFlexContainer">
-                {props.children}
-            </div>
-        </div>
-    );
+function ContentBlock(props) {
+  return (
+    <div className="contentBlock">
+      <div className="contentBlockFlexContainer"> {props.children} </div>
+    </div>
+  );
 }
+
+ContentBlock.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default ContentBlock;

@@ -1,37 +1,52 @@
 import React, { Component } from 'react';
-import './TypedText.css'
+import PropTypes from 'prop-types';
+import './TypedText.css';
 
-export default class TypedText extends Component {
+class TypedText extends Component {
 
-    constructor(props){
-        super(props);
-        this.state = { textToShow: this.props.body, shownText: ''};
+  constructor(props) {
+    super(props);
+    this.state = { textToShow: this.props.text, shownText: '' };
+  }
+
+  componentWillMount() {
+    this.timer = setInterval(this.type.bind(this), 50);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    if (this.props.renderOnce) {
+      this.setState({ shownText: this.state.textToShow });
     }
+  }
 
-    componentWillMount(){
-        this.timer = setInterval(this.type.bind(this), 50);
+  type() {
+    if (this.state.shownText.length <= this.state.textToShow.length - 1) {
+      this.setState({
+        shownText: this.state.shownText
+        + this.state.textToShow[this.state.shownText.length],
+      });
+    } else {
+      clearInterval(this.timer);
     }
+  }
 
-    componentWillUnmount(){
-        clearInterval(this.timer);
-        if(this.props.renderOnce){
-            this.setState({shownText: this.state.textToShow});
-        }
-    }
-
-    type(){
-        if(this.state.shownText.length <= this.state.textToShow.length-1){
-            this.setState({ shownText: this.state.shownText + this.state.textToShow[this.state.shownText.length]});
-        }else{
-            clearInterval(this.timer);
-        }
-    }
-
-    render(){
-        return(
-            <div>
-                <h1 className="typedText">{this.state.shownText}</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1 className="typedText">{this.state.shownText}</h1>
+      </div>
+    );
+  }
 }
+
+TypedText.defaultProps = {
+  renderOnce: false,
+};
+
+TypedText.propTypes = {
+  renderOnce: PropTypes.bool,
+  text: PropTypes.oneOf(PropTypes.string).isRequired,
+};
+
+export default TypedText;

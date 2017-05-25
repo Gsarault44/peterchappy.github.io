@@ -1,22 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './NavigationItem.css';
 
-const style = {
-
-    container : {
-        margin: "0px 20px",
-        cursor: "pointer",
-    },
-
+function NavigationItem({ title }) {
+  return (
+    <li>
+      <div className="container">
+        <a href={title}>
+          <h3>{title}</h3>
+        </a>
+      </div>
+    </li>
+  );
 }
 
-const NavigationItem = ({title}) => {
-    return(
-        <li>
-            <div style={style.container}>
-                <h3>{title}</h3>
-            </div>
-        </li>
-    );
-}
+NavigationItem.propTypes = {
+  title: PropTypes.oneOf(PropTypes.string).isRequired,
+};
 
 export default NavigationItem;

@@ -1,6 +1,6 @@
 .navbar{
     width: 100%;
-    height: 10%;
+    height: 5%;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     justify-content: space-around;
     background-color: #1E1E1E;
     color: #fff;
-    padding: 20px 0
+    padding-top: 20px;
 }
 
 .navSectionLeft{

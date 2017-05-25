@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ContentHolder.css';
 
-const ContentHolder = (props) =>{
-    return(
-        <div className="contentHolder">
-            {props.children}
-        </div>
-    );
+function ContentHolder(props) {
+  return <div className="contentHolder"> {props.children} </div>;
+}
+
+ContentHolder.propTypes = {
+  children: PropTypes.element.isRequired,
 };
 
 export default ContentHolder;
