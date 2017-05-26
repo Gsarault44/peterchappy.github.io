@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 const SocialIcon = ({ ...props }) => {
-  console.log({...props})
   return (
     <div className="socialIcon">
       <a href={props.icon.link}>
@@ -17,6 +16,12 @@ SocialIcon.propTypes = {
   link: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired
+};
+
+SocialIcon.defaultProps = {
+  link: '',
+  img: '',
+  type: ''
 };
 
 export default SocialIcon;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
 
-function NavigationItem({ title }) {
+const NavigationItem = ({ title }) => {
   return (
     <li>
       <div className="container">
