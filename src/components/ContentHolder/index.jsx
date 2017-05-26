@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ContentHolder.css';
+import './index.css';
 
 function ContentHolder(props) {
   return <div className="contentHolder"> {props.children} </div>;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './TypedText.css';
+import './index.css';
 
 class TypedText extends Component {
 

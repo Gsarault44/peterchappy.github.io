@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ContentBlock.css';
+import './index.css';
 
 function ContentBlock(props) {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
 import ContentHolder from './components/ContentHolder';
 import ContentBlock from './components/ContentBlock';
-import Navigation from './components/Navigation';
+import Navigation from './components/Nav/NavBar';
 import Footer from './components/Footer';
-import TypedText from './components/contentblocks/TypedText';
-import ContactBlock from './components/contentblocks/ContactBlock';
+import TypedText from './components/ContentBlocks/TypedText';
+import ContactBlock from './components/ContentBlocks/ContactBlock';
 
 import AppData from './content/Content.json';
 

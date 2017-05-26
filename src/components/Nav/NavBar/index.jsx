@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NavigationItem from './NavigationItem';
-import './Navigation.css';
+import NavigationItem from '../NavItem/index.jsx';
+import './index.css';
 
 function renderNavItems(navItems) {
   return (

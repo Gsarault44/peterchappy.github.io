@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SocialIcon from './SocialIcon';
-import './ContactBlock.css';
+import SocialIcon from '../SocialIcon/';
+import './index.css';
 
 function generateSocialIcons(icons) {
   return icons.map(icon => <SocialIcon key={icon.type} icon={icon} />);

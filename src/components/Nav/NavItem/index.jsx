@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './NavigationItem.css';
+import './index.css';
 
 function NavigationItem({ title }) {
   return (
