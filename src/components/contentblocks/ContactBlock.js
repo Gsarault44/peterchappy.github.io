@@ -4,7 +4,7 @@ import SocialIcon from './SocialIcon';
 import './ContactBlock.css';
 
 function generateSocialIcons(icons) {
-  return icons.map(icon => <SocialIcon key={icon.type} icon={icon} />);
+  return icons.map((icon) => { return <SocialIcon key={icon.type} icon={icon} />; });
 }
 
 function ContactBlock({ body }) {

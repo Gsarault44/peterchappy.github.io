@@ -4,17 +4,15 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  align-items: align-self;
   justify-content: space-around;
+  align-self: auto;
   background-color: #1E1E1E;
   color: #fff;
-  padding-top: 20px;
 }
 
 .navSectionLeft{
-  height: 100%;
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   justify-content: center;
   align-content: space-around;
   flex-direction: row;
@@ -22,11 +20,11 @@
 }
 
 .navSectionRight {
-  height: 100%;
   display: flex;
-  align-self: flex-end;
+  align-self: center;
   align-content: space-around;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   color: #fff;
 }

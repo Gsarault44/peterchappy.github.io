@@ -9,6 +9,7 @@ class TypedText extends Component {
     this.state = { textToShow: this.props.text, shownText: '' };
   }
 
+
   componentWillMount() {
     this.timer = setInterval(this.type.bind(this), 50);
   }
