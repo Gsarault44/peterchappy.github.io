@@ -4,12 +4,10 @@ import './index.css';
 
 const NavigationItem = ({ title }) => {
   return (
-    <li>
-      <div className="container">
-        <a href={title}>
-          <h3>{title}</h3>
-        </a>
-      </div>
+    <li className="navItemContainer">
+      <a href={title}>
+        <h3>{title}</h3>
+      </a>
     </li>
   );
 }
